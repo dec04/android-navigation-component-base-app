@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home__bottom_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_24px"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/map__bottom_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_place_24px"
+        android:title="@string/agzs_map" />
+    <item
+        android:id="@+id/news__bottom_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_newspaper"
+        android:title="@string/news" />
+    <item
+        android:id="@+id/support__bottom_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_support_agent_24px"
+        android:title="@string/support" />
+    <item
+        android:id="@+id/contacts__bottom_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_call_24px"
+        android:title="@string/contacts" />
+</menu>

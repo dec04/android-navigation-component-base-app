@@ -10,9 +10,9 @@
 <!--    <item name="color_secondary" type="color">@color/orange_500</item>-->
 <!--    <item name="color_secondary_light" type="color">@color/orange_300</item>-->
 <!--    <item name="color_secondary_dark" type="color">@color/orange_900</item>-->
+    <color name="transparent">#00ffffff</color>
 
     <!--  endregion Custom Colors  -->
-
     <!--  region Material Colors  -->
 
     <color name="red_50">#FFEBEE</color>

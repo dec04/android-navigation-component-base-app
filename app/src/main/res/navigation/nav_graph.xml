@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.dec04.gazoil.fragments.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_fragment_to_enterLoginCode"
+            app:destination="@id/enterLoginCode" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterLoginCode"
+        android:name="com.dec04.gazoil.EnterLoginCode"
+        android:label="fragment_enter_login_code"
+        tools:layout="@layout/fragment_enter_login_code" />
 </navigation>

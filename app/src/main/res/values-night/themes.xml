@@ -1,25 +1,41 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.Gazoil" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/deep_purple_300</item>
-        <item name="colorPrimaryVariant">@color/deep_purple_500</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/blue_300</item>
+        <item name="colorPrimaryLight">@color/light_blue_200</item>
+        <item name="colorPrimaryVariant">@color/blue_700</item>
+        <item name="colorPrimaryDark">@color/blue_900</item>
+        <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorSecondary">@color/orange_400</item>
+        <item name="colorSecondaryLight">@color/amber_200</item>
+        <item name="colorSecondaryDark">@color/amber_900</item>
+        <item name="colorSecondaryVariant">@color/orange_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     </style>
 
     <!-- ToolBar -->
-    <style name="Theme.Gazoil.ToolBarStyle" parent="Theme.Gazoil">
+    <style name="Theme.Gazoil.ToolBarStyle" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="colorPrimary">@color/blue_700</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/white</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <!-- BottomNavigation -->
+    <style name="Theme.Gazoil.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="colorPrimary">@color/blue_700</item>
+        <item name="android:background">@color/transparent</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
         <item name="android:textColorSecondary">?attr/colorOnPrimary</item>
-        <item name="android:background">?attr/colorPrimary</item>
         <item name="actionMenuTextColor">?attr/colorOnPrimary</item>
         <item name="iconTint">?attr/colorOnPrimary</item>
+        <item name="enforceTextAppearance">true</item>
+        <item name="enforceMaterialTheme">true</item>
     </style>
 </resources>

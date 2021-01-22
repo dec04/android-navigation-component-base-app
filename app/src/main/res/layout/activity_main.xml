@@ -1,50 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app__toolBarLayout"
+        android:id="@+id/app_bar__app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="56dp">
+        android:layout_height="wrap_content">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/app__toolbar"
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/top_app_bar__material_toolbar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="60dp"
             android:theme="@style/Theme.Gazoil.ToolBarStyle"
-            app:popupTheme="@style/Theme.Gazoil.ToolBarStyle">
+            app:menu="@menu/menu_top"
+            app:navigationIcon="@drawable/ic_menu_24px"
+            app:title="@string/app_name">
 
-            <TextView
-                android:id="@+id/app_toolbar_title__textView"
-                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/app_name"
-                android:text="@string/app_name"
-                android:textSize="20sp" />
-        </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.MaterialToolbar>
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:layout_height="match_parent">
 
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host__fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="60dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@+id/app_bottom_navigation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/nav_graph" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/app_bottom_navigation"
+            style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:theme="@style/Theme.Gazoil.BottomNavigation"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_navigation_menu" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
