@@ -3,5 +3,6 @@
     <attr name="colorPrimaryLight" format="reference" />
     <attr name="colorSecondaryLight" format="reference" />
     <attr name="colorSecondaryDark" format="reference" />
+    <attr name="colorOnPrimary30" format="reference" />
     <attr name="appBarBackgroundColor" format="reference" />
 </resources>

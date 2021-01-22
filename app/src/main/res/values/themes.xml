@@ -13,9 +13,14 @@
         <item name="colorSecondaryDark">@color/amber_900</item>
         <item name="colorSecondaryVariant">@color/orange_700</item>
         <item name="colorOnSecondary">@color/black</item>
+
+        <item name="colorOnPrimary30">@color/color_on_primary_30</item>
+
+        <item name="appBarBackgroundColor">@color/blue_700</item>
     </style>
 
-    <!-- Navigation drawer -->
+    <!-- region Navigation drawer -->
+
     <style name="Theme.Gazoil.Drawer" parent="Theme.Gazoil">
         <item name="colorOnPrimary">?attr/colorOnPrimary</item>
         <item name="android:background">?attr/colorPrimaryVariant</item>
@@ -27,13 +32,15 @@
 
     <style name="Theme.Gazoil.Drawer.TextButton" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
         <item name="android:textColor">?attr/colorOnPrimary</item>
-        <item name="strokeColor">@color/color_on_primary_30</item>
+        <item name="strokeColor">?attr/colorOnPrimary30</item>
         <item name="iconTint">?attr/colorOnPrimary</item>
     </style>
 
+    <!-- endregion Navigation drawer -->
+
     <!-- Top App Bar -->
     <style name="Theme.Gazoil.ToolBarStyle" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
-        <item name="colorPrimary">@color/blue_700</item>
+        <item name="colorPrimary">?attr/appBarBackgroundColor</item>
         <item name="colorPrimaryVariant">@color/white</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="titleTextColor">@color/white</item>
@@ -44,7 +51,7 @@
 
     <!-- BottomNavigation -->
     <style name="Theme.Gazoil.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
-        <item name="colorPrimary">@color/blue_700</item>
+        <item name="colorPrimary">?attr/appBarBackgroundColor</item>
         <item name="android:background">@color/transparent</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
