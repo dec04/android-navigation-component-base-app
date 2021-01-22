@@ -7,4 +7,9 @@
     <string name="support">Поддержка</string>
     <string name="contacts">Контакты</string>
     <string name="home">Главная</string>
+    <string name="about_promotion">О бонусной программе</string>
+    <string name="promotions_and_news">Акции и новости</string>
+    <string name="support_center">Служба поддержки</string>
+    <string name="lost_the_card">Утратили карту?</string>
+    <string name="logo">Логотип</string>
 </resources>

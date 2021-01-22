@@ -15,7 +15,7 @@
         <item name="colorOnSecondary">@color/black</item>
     </style>
 
-    <!-- ToolBar -->
+    <!-- Top App Bar -->
     <style name="Theme.Gazoil.ToolBarStyle" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
         <item name="colorPrimary">@color/blue_700</item>
         <item name="colorPrimaryVariant">@color/white</item>

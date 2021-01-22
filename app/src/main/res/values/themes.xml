@@ -15,7 +15,23 @@
         <item name="colorOnSecondary">@color/black</item>
     </style>
 
-    <!-- ToolBar -->
+    <!-- Navigation drawer -->
+    <style name="Theme.Gazoil.Drawer" parent="Theme.Gazoil">
+        <item name="colorOnPrimary">?attr/colorOnPrimary</item>
+        <item name="android:background">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.Gazoil.Drawer.Content" parent="Theme.Gazoil">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.Gazoil.Drawer.TextButton" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="strokeColor">@color/color_on_primary_30</item>
+        <item name="iconTint">?attr/colorOnPrimary</item>
+    </style>
+
+    <!-- Top App Bar -->
     <style name="Theme.Gazoil.ToolBarStyle" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
         <item name="colorPrimary">@color/blue_700</item>
         <item name="colorPrimaryVariant">@color/white</item>
