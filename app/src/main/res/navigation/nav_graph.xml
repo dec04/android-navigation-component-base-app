@@ -3,19 +3,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/mainFragment">
     <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.dec04.gazoil.fragments.LoginFragment"
+        android:id="@+id/mainFragment"
+        android:name="com.dec04.gazoil.fragments.MainFragment"
         android:label="login_fragment"
-        tools:layout="@layout/fragment_login">
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_login_fragment_to_enterLoginCode"
-            app:destination="@id/enterLoginCode" />
+            app:destination="@id/enterLoginCodeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/enterLoginCode"
-        android:name="com.dec04.gazoil.EnterLoginCode"
+        android:id="@+id/enterLoginCodeFragment"
+        android:name="com.dec04.gazoil.fragments.EnterLoginCodeFragment"
         android:label="fragment_enter_login_code"
         tools:layout="@layout/fragment_enter_login_code" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.dec04.gazoil.fragments.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.dec04.gazoil.fragments.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.dec04.gazoil.fragments.SupportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.dec04.gazoil.fragments.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" />
 </navigation>
