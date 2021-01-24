@@ -8,6 +8,20 @@
     <string name="about_promotion">О бонусной программе</string>
     <string name="promotions_and_news">Акции и новости</string>
     <string name="support_center">Служба поддержки</string>
-    <string name="lost_the_card">Утратили карту?</string>
+    <string name="lost_the_card">Утратили карту</string>
     <string name="logo">Логотип</string>
+    <string name="more">Еще</string>
+    <string name="settings">Настройки</string>
+    <string name="ok_ru">Одноклассники</string>
+    <string name="facebook">Фэйсбук</string>
+    <string name="instagram">Инстаграм</string>
+    <string name="vk_ru">Вконтакте</string>
+    <string name="any_problems">Возникли проблемы?</string>
+    <string name="social_title_menu_item">Мы в соцсетях</string>
+    <string name="vk_url">https://www.vk.com/gk_gazoil</string>
+    <string name="instagram_url">https://www.instagram.com/gk_gazoil/</string>
+    <string name="ok_url">https://ok.ru/gazoil</string>
+    <string name="facebook_url">https://www.facebook.com/gazoil22</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

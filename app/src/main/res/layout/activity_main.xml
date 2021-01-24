@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:theme="@style/Theme.Gazoil.ToolBarStyle"
-                app:menu="@menu/menu_top"
+                app:menu="@menu/top_menu"
                 app:navigationIcon="@drawable/ic_menu_24px"
                 app:title="@string/app_name">
 
@@ -44,19 +44,19 @@
                 android:id="@+id/nav_host__fragment"
                 android:name="androidx.navigation.fragment.NavHostFragment"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 app:defaultNavHost="true"
-                app:layout_constraintBottom_toBottomOf="@+id/app_bottom_navigation"
+                app:layout_constraintBottom_toBottomOf="@+id/app_bottom_navigation_view"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:navGraph="@navigation/nav_graph" />
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/app_bottom_navigation"
+                android:id="@+id/app_bottom_navigation_view"
                 style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:theme="@style/Theme.Gazoil.BottomNavigation"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +70,7 @@
 
     <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
+        android:id="@+id/drawer_navigation_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
@@ -78,7 +78,15 @@
         app:headerLayout="@layout/navigation_drawer_header_layout"
         app:menu="@menu/navigation_drawer_menu">
 
-        <!-- todo: Create nav drawer content -->
+        <TextView
+            android:id="@+id/by_dec04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textColorLink="?attr/colorPrimaryVariant" />
+
     </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

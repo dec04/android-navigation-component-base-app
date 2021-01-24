@@ -1,37 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <group
-        android:id="@+id/buttons__group__navigation_drawer"
+        android:id="@+id/buttons__common_group__navigation_drawer"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/map__bottom_menu"
+            android:id="@+id/mapFragment"
             android:enabled="true"
             android:icon="@drawable/ic_place_24px"
             android:title="@string/agzs_map" />
         <item
-            android:id="@+id/news__bottom_menu"
+            android:id="@+id/newsFragment"
             android:enabled="true"
             android:icon="@drawable/ic_newspaper"
             android:title="@string/promotions_and_news" />
         <item
-            android:id="@+id/promotions__bottom_menu"
+            android:id="@+id/promoteFragment"
             android:enabled="true"
             android:icon="@drawable/ic_sale"
             android:title="@string/about_promotion" />
         <item
-            android:id="@+id/support__bottom_menu"
+            android:id="@id/supportFragment"
             android:enabled="true"
             android:icon="@drawable/ic_support_agent_24px"
             android:title="@string/support_center" />
         <item
-            android:id="@+id/contacts__bottom_menu"
+            android:id="@+id/contactsFragment"
             android:enabled="true"
             android:icon="@drawable/ic_call_24px"
             android:title="@string/contacts" />
+    </group>
+
+    <group
+        android:id="@+id/buttons__special_group__navigation_drawer"
+        android:checkableBehavior="single">
         <item
-            android:id="@+id/lost_card__bottom_menu"
-            android:enabled="true"
-            android:icon="@drawable/ic_payment_24px"
-            android:title="@string/lost_the_card" />
+            android:id="@+id/special_title_menu_item"
+            android:title="@string/any_problems">
+            <menu>
+                <item
+                    android:id="@id/supportFragment"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_payment_24px"
+                    android:title="@string/lost_the_card" />
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/buttons__social_group__navigation_drawer"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/social_title_menu_item"
+            android:title="@string/social_title_menu_item">
+            <menu>
+                <item
+                    android:id="@+id/social_buttons__container__menu_item"
+                    android:title="@null"
+                    app:actionLayout="@layout/socials_buttons_layout" />
+            </menu>
+        </item>
     </group>
 </menu>
