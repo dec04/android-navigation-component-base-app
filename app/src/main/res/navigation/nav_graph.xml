@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_main" />
 
     <fragment
-        android:id="@+id/enterLoginCodeFragment"
-        android:name="com.dec04.gazoil.fragments.EnterLoginCodeFragment"
-        android:label="fragment_enter_login_code"
-        tools:layout="@layout/fragment_enter_login_code" />
+        android:id="@+id/loginFragment"
+        android:name="com.dec04.gazoil.fragments.LogInFragment"
+        android:label="@string/log_in"
+        tools:layout="@layout/fragment_login" />
 
     <fragment
         android:id="@+id/mapFragment"
@@ -43,7 +43,7 @@
     <fragment
         android:id="@+id/promoteFragment"
         android:name="com.dec04.gazoil.fragments.PromoteFragment"
-        android:label="fragment_promote"
+        android:label="@string/promotions_and_news"
         tools:layout="@layout/fragment_promote" />
 
 </navigation>

@@ -11,6 +11,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -70,7 +72,14 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
         NavigationUI.setupWithNavController(bottomNavigation, navController);
 
+        navController.addOnDestinationChangedListener((navController, destination, arguments) -> {
+            if (destination.getId() == R.id.loginFragment) {
+                // todo: set unselect menu items
+            }
+        });
+
         Menu menu = navView.getMenu();
+        setNavigationDrawerHeader();
         setSocialLinks(menu);
     }
 
@@ -96,6 +105,15 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.top_menu, menu);
         return true;
+    }
+
+    private void setNavigationDrawerHeader() {
+        View header = navView.getHeaderView(0);
+        Button logInButton = header.findViewById(R.id.navigation_drawer__login_button);
+        logInButton.setOnClickListener(v -> {
+            navController.navigate(R.id.loginFragment);
+            navigationDrawer.close();
+        });
     }
 
     private void setSocialLinks(Menu menu) {
@@ -124,12 +142,13 @@ public class MainActivity extends AppCompatActivity {
         facebookImageView.setOnClickListener(v -> goToUrl(getString(R.string.facebook_url)));
         okImageView.setOnClickListener(v -> goToUrl(getString(R.string.ok_url)));
 
+        // Get linkable navigation drawer bottom text view
         TextView byDec04 = findViewById(R.id.by_dec04);
         byDec04.setText(String.format("By Dec04, version %s", getAppVersion()));
-        Pattern p = Pattern.compile("dec04", Pattern.CASE_INSENSITIVE);
-        Linkify.addLinks(byDec04, p, "https://github.com/");
         byDec04.setClickable(true);
         byDec04.setMovementMethod(LinkMovementMethod.getInstance());
+        Pattern p = Pattern.compile("dec04", Pattern.CASE_INSENSITIVE);
+        Linkify.addLinks(byDec04, p, "https://github.com/");
 
     }
 
