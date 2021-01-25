@@ -1,9 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/supportFragment"
-        android:contentDescription="@string/settings"
+        android:id="@+id/aboutAppFragment"
+        android:contentDescription="@string/about_app"
         android:enabled="true"
-        android:title="@string/settings"
+        android:title="@string/about_app"
         app:showAsAction="never" />
 </menu>

@@ -73,8 +73,9 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(bottomNavigation, navController);
 
         navController.addOnDestinationChangedListener((navController, destination, arguments) -> {
-            if (destination.getId() == R.id.loginFragment) {
-                // todo: set unselect menu items
+            if (destination.getId() == R.id.loginFragment ||
+                    destination.getId() == R.id.aboutAppFragment) {
+                uncheckedBottomNavigationItems();
             }
         });
 
@@ -105,6 +106,15 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.top_menu, menu);
         return true;
+    }
+
+    private void uncheckedBottomNavigationItems() {
+        Menu menu = bottomNavigation.getMenu();
+        menu.setGroupCheckable(0, true, false);
+        for (int i = 0; i < menu.size(); i++) {
+            menu.getItem(i).setChecked(false);
+        }
+        menu.setGroupCheckable(0, true, true);
     }
 
     private void setNavigationDrawerHeader() {
@@ -152,6 +162,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void goToUrl(String url) {
+        Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(browse);
+    }
+
     private String getAppVersion() {
         String version = "";
 
@@ -163,10 +178,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return version;
-    }
-
-    private void goToUrl(String url) {
-        Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        startActivity(browse);
     }
 }
