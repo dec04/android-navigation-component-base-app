@@ -1,4 +1,4 @@
-package com.dec04.gazoil;
+package com.dec04.templateapp;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.dec04.gazoil", appContext.getPackageName());
+        assertEquals("com.dec04.templateapp", appContext.getPackageName());
     }
 }

@@ -9,7 +9,7 @@ buildscript {
 
         //region Type safety for Jetpack Navigation Component
 
-        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.2"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.3"
 
         //endregion
 

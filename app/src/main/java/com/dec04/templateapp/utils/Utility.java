@@ -1,4 +1,4 @@
-package com.dec04.gazoil.utils;
+package com.dec04.templateapp.utils;
 
 public class Utility {
 

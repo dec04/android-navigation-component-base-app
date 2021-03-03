@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.Gazoil" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/blue_300</item>
         <item name="colorPrimaryLight">@color/light_blue_200</item>
@@ -21,16 +21,16 @@
 
     <!-- region Navigation drawer -->
 
-    <style name="Theme.Gazoil.Drawer" parent="Theme.Gazoil">
+    <style name="Theme.AppTheme.Drawer" parent="Theme.AppTheme">
         <item name="colorOnPrimary">?attr/colorOnPrimary</item>
         <item name="android:background">?attr/colorPrimaryVariant</item>
     </style>
 
-    <style name="Theme.Gazoil.Drawer.Content" parent="Theme.Gazoil">
+    <style name="Theme.AppTheme.Drawer.Content" parent="Theme.AppTheme">
         <item name="android:textColor">?attr/colorOnPrimary</item>
     </style>
 
-    <style name="Theme.Gazoil.Drawer.TextButton" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+    <style name="Theme.AppTheme.Drawer.TextButton" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
         <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="strokeColor">?attr/colorOnPrimary30</item>
         <item name="iconTint">?attr/colorOnPrimary</item>
@@ -39,7 +39,7 @@
     <!-- endregion Navigation drawer -->
 
     <!-- Top App Bar -->
-    <style name="Theme.Gazoil.ToolBarStyle" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+    <style name="Theme.AppTheme.ToolBarStyle" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
         <item name="colorPrimary">?attr/appBarBackgroundColor</item>
         <item name="colorPrimaryVariant">@color/white</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -50,7 +50,7 @@
     </style>
 
     <!-- BottomNavigation -->
-    <style name="Theme.Gazoil.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+    <style name="Theme.AppTheme.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
         <item name="colorPrimary">?attr/appBarBackgroundColor</item>
         <item name="android:background">@color/transparent</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>

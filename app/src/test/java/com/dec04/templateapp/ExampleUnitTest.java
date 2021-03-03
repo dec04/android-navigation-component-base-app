@@ -1,4 +1,4 @@
-package com.dec04.gazoil;
+package com.dec04.templateapp;
 
 import org.junit.Test;
 

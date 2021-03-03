@@ -4,25 +4,30 @@
         android:id="@+id/mainFragment"
         android:enabled="true"
         android:icon="@drawable/ic_home_24px"
+        android:menuCategory="secondary"
         android:title="@string/home" />
     <item
         android:id="@+id/mapFragment"
         android:enabled="true"
         android:icon="@drawable/ic_place_24px"
+        android:menuCategory="secondary"
         android:title="@string/agzs_map" />
     <item
         android:id="@+id/newsFragment"
         android:enabled="true"
         android:icon="@drawable/ic_newspaper"
+        android:menuCategory="secondary"
         android:title="@string/news" />
     <item
         android:id="@+id/supportFragment"
         android:enabled="true"
         android:icon="@drawable/ic_support_agent_24px"
+        android:menuCategory="secondary"
         android:title="@string/support" />
     <item
         android:id="@+id/contactsFragment"
         android:enabled="true"
         android:icon="@drawable/ic_call_24px"
+        android:menuCategory="secondary"
         android:title="@string/contacts" />
 </menu>

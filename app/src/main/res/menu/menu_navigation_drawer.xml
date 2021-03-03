@@ -57,7 +57,7 @@
                 <item
                     android:id="@+id/social_buttons__container__menu_item"
                     android:title="@null"
-                    app:actionLayout="@layout/socials_buttons_layout" />
+                    app:actionLayout="@layout/layout_socials_buttons" />
             </menu>
         </item>
     </group>

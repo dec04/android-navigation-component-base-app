@@ -7,47 +7,47 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.dec04.gazoil.fragments.MainFragment"
+        android:name="com.dec04.templateapp.fragments.MainFragment"
         android:label="@string/home"
         tools:layout="@layout/fragment_main" />
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.dec04.gazoil.fragments.LogInFragment"
+        android:name="com.dec04.templateapp.fragments.LogInFragment"
         android:label="@string/log_in"
         tools:layout="@layout/fragment_login" />
 
     <fragment
         android:id="@+id/mapFragment"
-        android:name="com.dec04.gazoil.fragments.MapFragment"
+        android:name="com.dec04.templateapp.fragments.MapFragment"
         android:label="@string/agzs_map"
         tools:layout="@layout/fragment_map" />
 
     <fragment
         android:id="@+id/newsFragment"
-        android:name="com.dec04.gazoil.fragments.NewsFragment"
+        android:name="com.dec04.templateapp.fragments.NewsFragment"
         android:label="@string/news"
         tools:layout="@layout/fragment_news" />
 
     <fragment
         android:id="@+id/supportFragment"
-        android:name="com.dec04.gazoil.fragments.SupportFragment"
+        android:name="com.dec04.templateapp.fragments.SupportFragment"
         android:label="@string/support"
         tools:layout="@layout/fragment_support" />
 
     <fragment
         android:id="@+id/contactsFragment"
-        android:name="com.dec04.gazoil.fragments.ContactsFragment"
+        android:name="com.dec04.templateapp.fragments.ContactsFragment"
         android:label="@string/contacts"
         tools:layout="@layout/fragment_contacts" />
     <fragment
         android:id="@+id/promoteFragment"
-        android:name="com.dec04.gazoil.fragments.PromoteFragment"
+        android:name="com.dec04.templateapp.fragments.PromoteFragment"
         android:label="@string/promotions_and_news"
         tools:layout="@layout/fragment_promote" />
     <fragment
         android:id="@+id/aboutAppFragment"
-        android:name="com.dec04.gazoil.aboutAppFragment"
+        android:name="com.dec04.templateapp.aboutAppFragment"
         android:label="@string/about_app"
         tools:layout="@layout/fragment_about_app" />
 

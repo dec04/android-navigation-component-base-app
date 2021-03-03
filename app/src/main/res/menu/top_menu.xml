@@ -5,5 +5,6 @@
         android:contentDescription="@string/about_app"
         android:enabled="true"
         android:title="@string/about_app"
+        android:menuCategory="secondary"
         app:showAsAction="never" />
 </menu>

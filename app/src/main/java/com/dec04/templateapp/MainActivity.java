@@ -1,4 +1,4 @@
-package com.dec04.gazoil;
+package com.dec04.templateapp;
 
 import android.content.Intent;
 import android.content.pm.PackageInfo;
@@ -32,7 +32,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
-import static com.dec04.gazoil.utils.Utility.DEBUG_TAG;
+import static com.dec04.templateapp.utils.Utility.DEBUG_TAG;
 
 public class MainActivity extends AppCompatActivity {
 

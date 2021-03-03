@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "gazoil"
+rootProject.name = "templateapp"
